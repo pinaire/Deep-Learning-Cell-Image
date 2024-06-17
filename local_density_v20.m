@@ -1,6 +1,4 @@
-%this latest version includes a custom color map - 2/11/2024
-%includes both methods for calculating rho - old and new - make sure new
-%one is enabled and old one is commented
+%clusters parameters (see sample csv) by local density (adapted from 'Clustering by fast search and find of density peaks', A. Rodriguez and A. Laio) 
 
 clear
 clc
@@ -13,14 +11,7 @@ percent = 1.8;
 %glcm_path = './dataf/LabelB_bin.xlsx';
 %glcm_path = './dataf/GLCMparameters_mean_90_24hr.xlsx';
 glcm_path = './dataf/GLCMparameters_mean_90_48hr.xlsx';
-%glcm_path = './dataf/GLCMparameters_mean_90_72hr.xlsx';
-%glcm_path = './dataf/GLCMparameters_mean_45_24hr.xlsx';
-%glcm_path = './dataf/GLCMparameters_mean_45_48hr.xlsx';
-%glcm_path = './dataf/GLCMparameters_mean_45_72hr.xlsx';
-%glcm_path = './dataf/GLCMparameters_mean_0_24hr.xlsx';
-%glcm_path = './dataf/GLCMparameters_mean_0_48hr.xlsx';
-%glcm_path = './dataf/GLCMparameters_mean_0_72hr.xlsx';
-%glcm_path = './dataf/GLCMparameters_mean_hor.xlsx';
+
 glcm_table = readtable(glcm_path, 'VariableNamingRule', 'preserve');
 
 %taking only the desired GLCM values (mean)
