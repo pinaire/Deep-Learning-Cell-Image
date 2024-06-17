@@ -2,6 +2,6 @@
 
 2.) DINet-R2 (Python) trains a deep learning network on the clusters and builds a model
 
-3.) DINet-R2_testFeat (Python) tests the model, extracts features, and identifies support cells for each class used for reclassification
+3.) DINet-R2_testFeat (Python) tests the model, extracts features, and identifies support cells for each class
 
-4.) reclass_corr (MATLAB) calculates a correlation density from the support cells and reclassifies the non-support cells
+4.) reclass_corr (MATLAB) calculates a correlation density from the support cell features and reclassifies the non-support cells
