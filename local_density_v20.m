@@ -7,10 +7,7 @@ delete('results_lcldens\*')
 
 percent = 1.8;
 
-%glcm_path = './results_lcldens/LabelB_bin.xlsx';
-%glcm_path = './dataf/LabelB_bin.xlsx';
-%glcm_path = './dataf/GLCMparameters_mean_90_24hr.xlsx';
-glcm_path = './dataf/GLCMparameters_mean_90_48hr.xlsx';
+glcm_path = 'GLCMparameters_mean_90_48hr.xlsx';
 
 glcm_table = readtable(glcm_path, 'VariableNamingRule', 'preserve');
 
